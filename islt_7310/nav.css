@@ -1,0 +1,14 @@
+.nav {
+    background-color: coral;
+    border: 3px solid rgb(149, 220, 241);
+}
+
+.nav > li {
+display: inline-block;
+padding-right: 100px;
+} 
+
+.nav > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
