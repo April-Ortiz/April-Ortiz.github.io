@@ -6,9 +6,16 @@
 .nav > li {
 display: inline-block;
 padding-right: 100px;
+position: relative;
 } 
+
+.nav > li > ul {
+    display: block;
+    position: absolute;
+        }
 
 .nav > li > a {
     text-decoration: none;
     color: #ffffff;
 }
+
