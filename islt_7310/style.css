@@ -1,5 +1,36 @@
 #changeMe { color: #330066;}
 
+.wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: ;
+	grid-gap: 10px;
+	height: 720px;
+}
+
+nav {
+    grid-column:span 4;
+}
+
+main{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+image{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+header {
+    grid-column-start:2;
+    grid-column-end: 3;
+}
+
+footer {
+    grid-column:span 4;
+}
+
 p {
     font-size: 1rem;
     font-weight: 400;
