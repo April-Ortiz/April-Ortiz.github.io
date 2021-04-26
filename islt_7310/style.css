@@ -1,6 +1,6 @@
 #changeMe { color: #330066;}
 
-.wrapper {
+wrapper {
     display:grid;
     grid-template-columns: 1fr 1fr;
 	grid-template-rows: ;
