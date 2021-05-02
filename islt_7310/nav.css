@@ -24,7 +24,7 @@ nav ul li {
 nav ul li a {
     display:block;
     font-family: arial;
-    color: #330066;
+    color: white;
     font-size: 18px;
     padding: 3px 14px; 
     text-decoration: none;
@@ -33,7 +33,7 @@ nav ul li a {
 nav ul li ul {
     display:none;
     position: absolute;
-    background-color: #ffffff;
+    background-color:#330066;
     padding: 10px;
     border-radius: 0px 0px 4px 4px ;
 }
@@ -55,3 +55,156 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
     background-color: coral;
 }
+
+.navbar label {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .hamburger {
+        display: block;
+        height: 50px;
+        width: 50px;
+        z-index: 999;
+        opacity: 0;
+    }
+    .navbar .hamitems: hover{
+        display: block;
+    }
+    .navbar label, hamburger{
+        display: block;
+        color: white;
+        font-style: normal;
+        font-size: 3em;
+        padding: 0;
+        position: absolute;
+        right: 33px;
+    } 
+    .navlink {
+        width: 100%;
+    }
+    .navlink a{
+        text-decoration: none;
+        display: block;
+        background-color: black;
+        padding: 5px;
+        width: 70px;
+        margin: 0; 
+        color: white;
+    }
+    .hamitems {
+        display: none;
+        flex-direction: column;
+        top: 70px;
+        right: -305px;
+        z-index: 999;
+    }
+    .hamitems, .navbar:active .hamitems {
+        display: none; 
+        position: absolute;
+    }
+
+    .navbar input:checked ~ .hamitems {display:block;}
+    
+    .submenu {
+        z-index: 999;
+        left: -120px;
+        top: -1px;
+    }
+    
+}
+
+.navbar label, .hamburger {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    height: 50px;
+    width: 50px;
+    z-index: 999;
+    opacity: 0;
+}
+
+.hamitems {
+    list-style-type: none;
+  }
+
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    width: auto;
+    margin: 2px;
+    color: white;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    z-index: 999;
+    width: max-content;
+    list-style: none;
+    left: -110px;
+    list-style: none;
+  }
+
+  @media screen and (max-width:640px){
+    /*All Pages*/
+ 
+     .hamitems:hover {
+         display: block;
+     }
+ 
+     .navbar label, hamburger {
+         display: inline-block;
+         color: white;
+         font-style: normal;
+         font-size: 3em;
+         padding: 10px;
+     }
+ 
+     .hamitems{
+         top: 70px;
+         right: -305px;
+         z-index: 1000;
+     }
+ 
+     .hamitems a{
+         width: 70px;
+         text-decoration: none;
+         display: block;
+         border: 3px solid black;
+         padding: 5px;
+         width: 70px;
+         margin: 0; 
+         color:black;
+         position: relative;
+         left: -10px
+         }
+     
+     .hamburger {
+         display: block;
+         height: 50px;
+         width: 50px;
+         z-index: 999;
+         opacity: 0;
+         }
+ 
+      #logo2{
+         position: relative;
+         top: -145px;
+     }
+ 
+     #logo4{
+         position: relative;
+         top: -255px;
+     }
+ }
+ }
+
+
+
+
+

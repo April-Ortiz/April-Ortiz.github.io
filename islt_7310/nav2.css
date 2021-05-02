@@ -1,0 +1,35 @@
+.hamitems {
+  list-style-type: none;
+}
+
+.navlink {
+  float: left;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: #187ab3;
+}
+
+.navbar a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  width: auto;
+  margin: 2px;
+  color: white;
+}
+
+.navlink a:link {
+  background-color: black;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  z-index: 999;
+  width: max-content;
+  list-style: none;
+  left: -110px;
+  list-style: none;
+}

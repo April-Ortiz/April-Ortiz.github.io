@@ -10,29 +10,36 @@
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
-<body>
-    <div class="wrapper">
-      <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Learn</a>
-                  <ul>
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
+<body class="wrapper">
+    <nav class="navbar">
+        <label for="hamburger">☰</label>
+        <input class="hamburger" type="checkbox">
+            <ul class="hamitems">
+                <li class="navlink">
+                    <a href="index.html">Home</a></li>
+                <li class="navlink">
+                    <a href="about.html">About</a></li>
+                <li class="navlink">
+                    <a href="#">Learn</a>
+                  <ul class="submenu">
+                      <li><a href="#">Learn Project 1</a></li>
+                      <li><a href="#">Learn Project 2</a></li>
+                      <li><a href="#">Learn Project 3</a></li>
                   </ul>
                   </li>
-                <li><a href="reflection.html">References</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="navlink">
+                    <a href="reflection.html">References</a></li>
+                <li class="navlink">
+                    <a href="#">Contact</a></li>
             </ul>
         </nav>
-        <header> 
-        <h1>
-        April Oritz
-        </h1>
-        </header>
-        <main>
+        <header class="title">
+            <h1 id="about_me">
+                About Me
+            </h1>
+            </header>
+        <img id="April" src="April.jpg" alt="April Ortiz">
+        <main class="text">
             <p>I am a senior here at Mizzou and I'm majoring in Digital Storytelling with a minor in Business. I have a husband and beautiful 8-year-old boy, along with two dogs and a cat; so we have a <strong>full house! </strong></p>
             <p>Going to school along with a full-time job keeps me pretty busy.My work here at the University has allowed me to gain some experience in HTML and CSS by maintaining the Cashiers website. </p>
             <p>With any free time I have left, I also compete on <em>two Rainbow Six Siege teams</em>; one is a school affiliated team and another is an all-female team. Outside of those, I additionally try to stream on Twitch as content creation is another hobby I enjoy.</p>
@@ -41,10 +48,12 @@
         <strong>
                 View my resume<a href="../islt_7310/OrtizResume.pdf" target="_blank">here. </a>
         </strong>
-        <img class=".responsive" src="April.jpg" alt="April Ortiz">
         </main>
-        
-        <footer>&copy; Copyright 2021 April Ortiz: <img src="images/email2.png" alt="envelope"> <a href="mailto:ortizae@umsystem.edu">ortizae@umsystem.edu</a> <img src="images/phone2.png" alt= "phone"> 1-888-888-8888</footer>
+        <footer class="baseline">
+            <p class="footer-content">
+            &copy; Copyright 2021 April Ortiz: <img src="images/email2.png" alt="envelope"> <a href="mailto:ortizae@umsystem.edu">ortizae@umsystem.edu</a> <img src="images/phone2.png" alt= "phone"> 1-888-888-8888
+            </p>
+        </footer>
     </div>    
 </body>
 </html>
