@@ -56,11 +56,12 @@ nav ul li ul li a:hover {
     background-color: coral;
 }
 
-.navbar label {
+.navbar label, .hamburger {
     display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width:992px){
+
     .hamburger {
         display: block;
         height: 50px;
@@ -68,10 +69,12 @@ nav ul li ul li a:hover {
         z-index: 999;
         opacity: 0;
     }
-    .navbar .hamitems: hover{
+
+    .navbar .hamitems:hover {
         display: block;
     }
-    .navbar label, hamburger{
+
+    .navbar label, .hamburger {
         display: block;
         color: white;
         font-style: normal;
@@ -79,10 +82,12 @@ nav ul li ul li a:hover {
         padding: 0;
         position: absolute;
         right: 33px;
-    } 
-    .navlink {
-        width: 100%;
     }
+
+    .navlink {
+        width: 100%; 
+    }
+
     .navlink a{
         text-decoration: none;
         display: block;
@@ -92,13 +97,15 @@ nav ul li ul li a:hover {
         margin: 0; 
         color: white;
     }
-    .hamitems {
+
+    .hamitems{
         display: none;
         flex-direction: column;
         top: 70px;
         right: -305px;
         z-index: 999;
     }
+
     .hamitems, .navbar:active .hamitems {
         display: none; 
         position: absolute;
@@ -111,44 +118,21 @@ nav ul li ul li a:hover {
         left: -120px;
         top: -1px;
     }
-    
-}
 
-.navbar label, .hamburger {
-    display: none;
-}
+    #logo1, #logo5{
+        position: relative;
+        top: -100px;
+    }
 
-.hamburger {
-    display: block;
-    height: 50px;
-    width: 50px;
-    z-index: 999;
-    opacity: 0;
-}
+    #logo2, #logo3{
+        position: relative;
+        top: -175px;
+    }
 
-.hamitems {
-    list-style-type: none;
-  }
-
-.navbar a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
-    width: auto;
-    margin: 2px;
-    color: white;
-  }
-  
-  .submenu {
-    position: absolute;
-    top: 100%;
-    display: none;
-    z-index: 999;
-    width: max-content;
-    list-style: none;
-    left: -110px;
-    list-style: none;
-  }
+    #logo4{
+        position: relative;
+        top: -175px;
+    }
 
   @media screen and (max-width:640px){
     /*All Pages*/
@@ -157,7 +141,7 @@ nav ul li ul li a:hover {
          display: block;
      }
  
-     .navbar label, hamburger {
+     .navbar label, .hamburger {
          display: inline-block;
          color: white;
          font-style: normal;
