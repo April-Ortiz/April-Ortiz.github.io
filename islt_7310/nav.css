@@ -1,7 +1,7 @@
 nav {
     width: 100%; 
     height: 60px; 
-    background-color: coral;
+    background-color: #330066;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav ul li {
 nav ul li a {
     display:block;
     font-family: arial;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     padding: 3px 14px; 
     text-decoration: none;
@@ -33,7 +33,7 @@ nav ul li a {
 nav ul li ul {
     display:none;
     position: absolute;
-    background-color:#330066;
+    background-color:#d2d3d2;
     padding: 10px;
     border-radius: 0px 0px 4px 4px ;
 }
@@ -49,7 +49,7 @@ nav ul li ul li{
 }
 
 nav ul li ul li a {
-    padding: 0px 14px; 
+    padding: 0px 12px; 
 }
 
 nav ul li ul li a:hover {
@@ -91,11 +91,11 @@ nav ul li ul li a:hover {
     .navlink a{
         text-decoration: none;
         display: block;
-        background-color: black;
+        background-color: #d2d3d2;
         padding: 5px;
         width: 70px;
         margin: 0; 
-        color: white;
+        color: black;
     }
 
     .hamitems{
@@ -103,7 +103,7 @@ nav ul li ul li a:hover {
         flex-direction: column;
         top: 70px;
         right: -305px;
-        z-index: 999;
+        z-index: auto;
     }
 
     .hamitems, .navbar:active .hamitems {
@@ -159,7 +159,6 @@ nav ul li ul li a:hover {
          width: 70px;
          text-decoration: none;
          display: block;
-         border: 3px solid black;
          padding: 5px;
          width: 70px;
          margin: 0; 
