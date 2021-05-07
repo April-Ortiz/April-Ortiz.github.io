@@ -10,10 +10,10 @@
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
-<body class="wrapper">
+<body class="cwrapper">
     <nav class="navbar">
     <label for="hamburger">&#9776;</label>
-        <input class="hamburger" type="checkbox">
+        <input class="hamburger" type="checkbox"/>
             <ul class="hamitems">
                 <li class="navlink"><a href="index.html">Home</a></li>
                 <li class="navlink"><a href="about.html">About</a></li>
@@ -28,22 +28,30 @@
                 <li class="navlink"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <header class="title">
-            <h1 id="about_me">
-                About Me
-            </h1>
-            </header>
-        <img id="April" src="April.jpg" alt="April Ortiz">
+        <header class="title">   
+            <h1 id="contact">
+            Contact Me
+            </h1> 
+        </header>
+        <form action="mailto:ortizae@missouri.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname"  id="firstname" autofocus tabindex="1" placeholder="First Name" required>
+        <br> 
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" tabindex="2" placeholder="Last Name" required>
+        <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" tabindex="3" placeholder="youremail@gmail.com" required>
+        <br>
+            <label>Message</label>
+            <textarea id="message" name="message" tabindex="4" placeholder="Type Your Message Here."></textarea>
+        <br>
+        <button>Submit</button>
+    </form>
+        
         <main class="text">
-            <p>I am a senior here at Mizzou and I'm majoring in Digital Storytelling with a minor in Business. I have a husband and beautiful 8-year-old boy, along with two dogs and a cat; so we have a <strong>full house! </strong></p>
-            <p>Going to school along with a full-time job keeps me pretty busy.My work here at the University has allowed me to gain some experience in HTML and CSS by maintaining the Cashiers website. </p>
-            <p>With any free time I have left, I also compete on <em>two Rainbow Six Siege teams</em>; one is a school affiliated team and another is an all-female team. Outside of those, I additionally try to stream on Twitch as content creation is another hobby I enjoy.</p>
-                <br> I am hopeful after the completion of my degree that I will be able to get a job in esports. Esports and content creation has grown to become a passion of mine that I want to share with others. 
-                <blockquote class="top-header">"Make it simple. Make it memorable. Make it inviting to look at. Make it fun to read. " Leo Burnett</blockquote>
-        <strong>
-                View my resume<a href="../islt_7310/OrtizResume.pdf" target="_blank"> here. </a>
-        </strong>
         </main>
+        
         <footer class="baseline">
             <div id="footerspace" class="footerspace">
             <p class="footer-content">
@@ -51,5 +59,5 @@
             </p>
             </div>
         </footer> 
-</body>
+    </body>
 </html>

@@ -63,7 +63,7 @@
     text-align: center;
 }
 
-#footerspace {
+.footerspace {
     margin: 0;
     padding: 0;
     background-image: url(images/paper.jpg);
@@ -95,6 +95,39 @@ p {
 .video {
     grid-row: 4;
     grid-column: 4;
+}
+
+#table{
+    border-spacing: 5px; 
+    width: 100%; 
+    margin-bottom: 50px;
+    margin-top: 50px; 
+}
+
+table, th, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 15px; 
+}
+
+#table tr:nth-child(even){
+    background-color: #c07d02;
+    color: white; 
+}
+
+#table th{
+    background-color: rgb(128, 131, 134);
+    color: white; 
+}
+
+#table tr:nth-child(eodd){
+    background-color: white;
+}
+
+#caption{
+    font-weight: bold;
+    font-size: 14pt; 
+    padding: 5px; 
 }
 
 @media screen and (max-width:992px){
