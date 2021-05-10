@@ -1,0 +1,268 @@
+#changeMe { color: #330066;}
+
+.wrapper {
+    display:grid;
+    grid-template-columns: 2% 1fr 1fr 1fr 1fr 2%;
+    grid-template-rows: 70px 100px repeat(3, 2fr) 70px 200px 70px;
+    grid-gap: 16px;
+}
+
+.navbar {
+    justify-content: flex-end;    
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    grid-row: 1;
+    grid-column: 1 / 6;
+    align-items: center;
+    background-color: coral;
+}
+
+.title {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+}
+
+#about_me {
+    padding: 10px 10px 10px 10px;
+    min-width: 150px;
+    max-width: 250px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+#project_title {
+    padding: 10px 10px 10px 10px;
+    min-width: 150px;
+    max-width: 250px;
+    margin: auto;
+    grid-row: 2;
+    grid-column: 3 / 4;
+    top: 20px;
+    text-align: center;
+}
+
+#April {
+    grid-row: 3/ 6;
+    grid-column: 5 / 6; 
+}
+
+.text {
+    grid-row: 3 / 5;
+    grid-column: 2 / 4;
+}
+
+.baseline {
+    grid-row: 8;
+    grid-column: 1 / 6;
+    display: grid;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footerspace {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/paper.jpg);
+    width: 100%;
+    height: 80px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-bottom: 2em;
+}
+
+.top-header {
+    width: 100%;
+    max-width: 960px;
+    font: 1em "Roboto", sans-serif;
+    color: #ff323c;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+
+.t1text {
+    grid-row: 3 / 5;
+    grid-column: 2 / 4;
+   
+}
+
+.video {
+    grid-row: 4;
+    grid-column: 4;
+}
+
+#table{
+    border-spacing: 5px; 
+    width: 100%; 
+    margin-bottom: 50px;
+    margin-top: 50px; 
+}
+
+table, th, td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 15px; 
+}
+
+#table tr:nth-child(even){
+    background-color: #015361;
+    color: white; 
+}
+
+#table th{
+    background-color: rgb(0, 0, 0);
+    color: white; 
+}
+
+#table tr:nth-child(eodd){
+    background-color: white;
+}
+
+#caption{
+    font-weight: bold;
+    font-size: 14pt; 
+    padding: 5px; 
+}
+
+@media screen and (max-width:992px){
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 10px; 
+    }
+
+    .baseline{
+        display: flex;
+        justify-content:center;
+        padding-bottom: 10px; 
+    }
+
+    .text{
+        font-size: 14pt;
+    }
+
+    .content-box{
+        margin: 10px;
+        width: 95%;
+        position: relative;
+        top: -35px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 5px; 
+    }
+
+    #April {
+        display: flex;
+        align-self: center;
+        width: 30%;
+        margin-top: 5px;
+        height: auto;
+        position: relative;
+        top: -50px;
+    }
+
+    .top-header {
+    width: 100%;
+    max-width: 960px;
+    font: 1em "Roboto", sans-serif;
+    color: #ff323c;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+
+@media screen and (max-width:640px){
+
+     .title {
+        display: flex; 
+        position: relative;
+        height: 30px;
+        width: 100%; 
+    }
+
+    #April {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        width: 30%;
+        margin-top: 10px;
+        height: auto;
+        position: relative;
+        top: -35px;
+    }
+
+    .text {
+        margin: 20px;
+        font-size: 16pt; 
+    }
+
+    #about_me {
+        top: 10px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;   
+    }
+
+    .text{
+        font-size: 16pt;
+        margin-top: -80px;
+    }
+
+ .top-header {
+    width: 100%;
+    max-width: 960px;
+    font: 1em "Roboto", sans-serif;
+    color: #ff323c;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    }
+}
+  
+@media print{
+    header, nav {
+        display:none; 
+        margin: 2.54cm;
+    }
+
+    p {
+        font-size: 12pt;
+        color: #000;
+    }
+
+    article {
+        width: 100%!important;
+        padding: 0!important;
+        margin: 0!important;
+    }
+    @page {
+        margin: 1in;
+    }
+}
+
+.pic {
+    width: 16px;
+    height: 16px;
+}
+
+.picbig {
+    position: absolute; 
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 10;
+}
+
+.pic:hover + .picbig{
+    width:30px;
+}
+
