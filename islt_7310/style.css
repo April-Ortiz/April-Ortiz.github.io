@@ -82,7 +82,7 @@ p {
     width: 100%;
     max-width: 960px;
     font: 1em "Roboto", sans-serif;
-    color: #eb9c34;
+    color: #ff323c;
     text-shadow: 1px 1px 0 rgba(0,0,0,.2);
 }
 
@@ -111,7 +111,7 @@ table, th, td{
 }
 
 #table tr:nth-child(even){
-    background-color: #f1b443;
+    background-color: #015361;
     color: white; 
 }
 
@@ -223,7 +223,7 @@ table, th, td{
     width: 100%;
     max-width: 960px;
     font: 1em "Roboto", sans-serif;
-    color: #eb9c34;
+    color: #ff323c;
     text-shadow: 1px 1px 0 rgba(0,0,0,.2);
     }
 }
